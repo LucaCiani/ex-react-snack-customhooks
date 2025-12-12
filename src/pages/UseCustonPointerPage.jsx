@@ -1,0 +1,12 @@
+import useCustomPointer from "../hooks/useCustomPointer";
+
+export default function useCustomPointerPage() {
+    const customPointer = useCustomPointer("🔥");
+
+    return (
+        <div>
+            <h1>Sposta il mouse per vedere il cursore personalizzato!</h1>
+            {customPointer}
+        </div>
+    );
+}
